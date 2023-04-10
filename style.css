@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0ede2;
+    line-height: 1.9;
+    color: #231942;
+}
+
+/* Utilities */
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sm {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    border: none;
+    background: #eb5e28;
+    color: #fff;
+    padding: 1.2rem 0;
+    border-radius: 15px;
+    margin-top: 1rem;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background: #210062;
+}
+
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    margin: 5rem auto;
+    padding: 3rem 3rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 2px rgba(204, 204, 204, 1);
+}
+
+.card .pick-up {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .pick-up #location,
+.column .column-1 input[type="date"],
+.column .column-1 input[type="time"],
+.column .column-2 input[type="date"],
+.column .column-2 input[type="time"] {
+    padding: 0.4rem;
+    border: 1px solid #778da9;
+    border-radius: 3px;
+}
+
+.card .pick-up input::placeholder {
+    font-weight: 600;
+    color: #210062;
+    font-size: 11px;
+}
+
+.card .check,
+.card .age {
+    padding-top: 0.5rem;
+    font-weight: 600;
+    color: #210062;
+    font-size: 12px;
+}
+
+/* Date for pickup and delivery */
+.column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.column .column-1 input[type="date"],
+.column .column-1 input[type="time"],
+.column .column-2 input[type="date"],
+.column .column-2 input[type="time"] {
+    width: 100%;
+    margin-bottom: 0.3rem;
+}
+
+.check-status {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0.4rem 0;
+}
